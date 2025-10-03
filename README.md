@@ -1,4 +1,4 @@
-# Ai Agent (Code Assistant)
+# AI Agent (Code Assistant)
 A tiny AI code agent that can read files, list directories, execute Python files, and write files within a sandbox working directory. It's designed to be clear enough to learn from while also small enough to extend. You can add your own ```'mini-app'``` adjacent to folders like ```calculator/``` or ```converter/```, then ask the agent to explore, run, fix or explain them.
 
 ### Purpose
@@ -18,14 +18,6 @@ A tiny AI code agent that can read files, list directories, execute Python files
     - [```calculator/```](https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/calculator#readme): Simple calculator app
     - [```converter/```](https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/converte#readme): Simple mass, temperature and distance converter
 
-## Requirements
-- Python 3.10+
-- [```uv```](https://docs.astral.sh/uv/) Project/package manager
-- Unix-like shell (WSL Recommended)
-- A Google API key in ```.env```:
-    ```
-    GEMINI_API_KEY = <your-api-key>
-    ```
 
 ## Project Structure
 ```
@@ -49,3 +41,27 @@ ai-agent/
 └─ README.md
 
 ```
+
+## Requirements
+- Python 3.10+
+- [```uv```](https://docs.astral.sh/uv/) Project/package manager
+- Unix-like shell (WSL Recommended)
+- A Google API key in ```.env```:
+    ```
+    GEMINI_API_KEY = <your-api-key>
+    ```
+
+## Install
+
+## Run the agent
+
+### Running the example apps directly
+
+## Tests
+
+### Expected Output
+
+## Adding your own mini-app
+
+
+
