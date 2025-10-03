@@ -11,7 +11,6 @@ def index():
     if request.method == "POST":
         command = request.form["command"]
         try:
-            # Call the get_files_info function
             result = default_api.get_files_info(directory=command)
             output = json.dumps(result)
         except Exception as e:

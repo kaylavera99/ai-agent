@@ -68,7 +68,7 @@ def generate_content(client, messages, verbose):
         print("Response tokens:", response.usage_metadata.candidates_token_count)
 
     if response.candidates:
-        # Add candidate content to messages
+        # add candidates content to messages
         for candidate in response.candidates:
             if candidate.content:
                 function_call_candidates = candidate.content
@@ -79,7 +79,7 @@ def generate_content(client, messages, verbose):
 
     function_responses = []
 
-    # Execute any requested functions
+    # Execute any requested function(s)
     for function_call_part in response.function_calls:
         function_call_result = call_function(function_call_part, verbose)
         if (

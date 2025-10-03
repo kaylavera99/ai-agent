@@ -1,4 +1,3 @@
-# conversions.py
 
 class ConversionResults:
     value: float
