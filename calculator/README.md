@@ -4,7 +4,7 @@ A small calculator used by the Ai Agent and runnable on its own. It parses and e
 
 ### Quick Start
 - Example command:
-```uv run calculator/main.py```
+```uv run calculator/main.py "2 * 3 - 8 / 2 + 5"```
 
 - Output
 ```
