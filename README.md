@@ -16,11 +16,11 @@ A tiny AI code agent that can read files, list directories, execute Python files
     - Write and overwrite files.
 - Example apps: 
     - [```calculator/```](https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/calculator#readme): Simple calculator app
-    - ```converter/```[https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/converte#readme]: Simple mass, temperature and distance converter
+    - [```converter/```](https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/converte#readme): Simple mass, temperature and distance converter
 
 ## Requirements
 - Python 3.10+
-- uv[https://docs.astral.sh/uv/] Project/package manager
+- [```uv```](https://docs.astral.sh/uv/) Project/package manager
 - Unix-like shell (WSL Recommended)
 - A Google API key in ```.env```:
     ```
