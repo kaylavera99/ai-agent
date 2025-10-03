@@ -15,7 +15,7 @@ A tiny AI code agent that can read files, list directories, execute Python files
     - Execute Python files with arguments via CLI
     - Write and overwrite files.
 - Example apps: 
-    - ```calculator/```[https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/calculator#readme]: Simple calculator app
+    - [```calculator/```](https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/calculator#readme): Simple calculator app
     - ```converter/```[https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/converte#readme]: Simple mass, temperature and distance converter
 
 ## Requirements
