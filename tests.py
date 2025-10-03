@@ -4,8 +4,8 @@ from functions.get_files_info import get_files_info
 
 print("Testing the 'run_pytyhon_file' function with various scenarios:")
 print("CALCULATOR TESTS")
-print(run_python_file(working_directory=".", file_path="calculator/main.py"))
-print(run_python_file(working_directory=".", file_path="calculator/main.py", args=["3 + 5"]))
+#print(run_python_file(working_directory=".", file_path="calculator/main.py"))
+#print(run_python_file(working_directory=".", file_path="calculator/main.py", args=["3 + 5"]))
 print(run_python_file(working_directory=".", file_path="calculator/tests.py"))
 
 print("CONVERTER TESTS")

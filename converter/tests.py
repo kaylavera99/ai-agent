@@ -1,7 +1,13 @@
-#converter/tests.py
-import unittest
 
-from pkg.conversions import _convert_units_temp
+import unittest
+import sys
+from pathlib import Path
+
+repo_root = Path(__file__).resolve().parents[1]
+if str(repo_root) not in sys.path:
+    sys.path.insert(0, str(repo_root))
+
+from converter.pkg.conversions import _convert_units_temp
 
 
 class TestConversionResults(unittest.TestCase):

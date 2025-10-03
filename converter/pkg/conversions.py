@@ -52,8 +52,8 @@ _weight_units = {
     "g": 1.0, "gram": 1.0, "grams": 1.0,
     "kg": 1000.0, "kilogram": 1000.0, "kilograms": 1000.0,
     "mg": 0.001, "milligram": 0.001, "milligrams": 0.001,
-    "lb": 453.592, "pound": 453.592, "pounds": 453.592,
-    "oz": 28.3495, "ounce": 28.3495, "ounces": 28.3495,
+    "lb": 453.592, "lbs": 453.592, "pound": 453.592, "pounds": 453.592,
+    "oz": 28.3495, "ounce": 28.3495, "ounces": 28.3495, "ozs": 28.3495
 }
 def _convert_units_tables(value: float, from_units: str, to_units: str, units_dict: dict) -> float:
     f = from_units.lower()
@@ -65,7 +65,7 @@ def _convert_units_tables(value: float, from_units: str, to_units: str, units_di
 
 def _convert_units_temp(value: float, from_units: str, to_units: str) -> ConversionResults:
     length_units = {"m", "meter", "meters", "km", "kilometer", "kilometers", "cm", "centimeter", "centimeters", "mm", "millimeter", "millimeters", "mi", "mile", "miles", "yd", "yard", "yards", "ft", "foot", "feet", "in", "inch", "inches"}
-    weight_units = {"g", "gram", "grams", "kg", "kilogram", "kilograms", "mg", "milligram", "milligrams", "lb", "pound", "pounds", "oz", "ounce", "ounces"}
+    weight_units = {"g", "gram", "grams", "kg", "kilogram", "kilograms", "mg", "milligram", "milligrams", "lb", "pound", "pounds", "oz", "ounce", "ounces", "lbs", "ozs"}
     f_raw = from_units.strip().lower()
     t_raw = to_units.strip().lower()
     if f_raw in _temps and t_raw in _temps:
