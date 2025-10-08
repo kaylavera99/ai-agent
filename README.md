@@ -12,8 +12,10 @@ A tiny AI code agent that can read files, list directories, execute Python files
 - Tools:
     - List contents of directories with associated files
     - Read file contents
-    - Execute Python files with arguments via CLI
-    - Write and overwrite files.
+    - Execute Python files with arguments via CLI within a secure sandbox
+    - Read, write and overwrite files. 
+    - Easily add new functionalities by creating 'mini-apps' in dedicated folders. 
+    - Includes pre-built modules that can be expanded or replaced. 
 - Example apps: 
     - [```calculator/```](https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/calculator#readme): Simple calculator app
     - [```converter/```](https://github.com/kaylavera99/ai-agent/tree/b942e174a5e2833c8ff680be224ec30e2ba8f4ee/converter#readme): Simple mass, temperature and distance converter
@@ -34,10 +36,12 @@ ai-agent/
 ├─ templates/            # (in progress) Flask UI templates
 ├─ app.py                # (in progress) Flask UI to chat with the agent
 ├─ main.py               # agent CLI entrypoint
+├─ tests.py              # unit tests
 ├─ config.py             # working dir and iteration limits
 ├─ prompts.py            # language prompt
-├─ pyproject.toml
-├─ uv.lock
+├─ pyproject.toml        # project metadata and dependencies
+├─ pytest.ini            # Pytest configuration
+├─ uv.lock               # UVicorn lock file for ASGI server
 └─ README.md
 
 ```
