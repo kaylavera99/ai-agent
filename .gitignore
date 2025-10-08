@@ -13,4 +13,8 @@ system_prompt.py
 # Env file
 .env
 
+venv_clean/
+venv/
+script.py
+
 

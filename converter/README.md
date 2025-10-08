@@ -5,22 +5,23 @@ A small, light-weight conversion tool that converts temperatures, mass and dista
 ### Quick Start
 - Converting length:
 ```
-uv run converter/main.py "Convert 10 m to feet"
+python converter/main.py "Convert 10 m to feet"
+uv run converter/main.py "Convert 8 feet to yards"
 ```
 - Converting temperature:
 ```
-uv run converter/main.py "10 Fahrenheit to Celsius"
+python converter/main.py "10 Fahrenheit to Celsius"
 uv run converter/main.py "300 K to F"
 ```
 
 - Converting mass:
 ```
-uv run converter/main.py "133 kg to ounces"
+python converter/main.py "133 kg to ounces"
 uv run converter/main.py "0.421 lbs to oz"
 ```
 - Phrasing variations:
 ```
-uv run converter/main.py "convert 133 mm to feet"
+python converter/main.py "convert 133 mm to feet"
 uv run converter/main.py "32 F to C"
 
 ```
@@ -52,6 +53,13 @@ converter/
 ```
 
 ## Running tests
+### Using Python directly (Recommended)
+```
+python -m unittest converter/tests.py -v
+python -m unittest converter.tests
+
+```
+### Using uv
 ```
 uv run python -m unittest converter/tests.py -v
 uv run python -m unittest converter.tests

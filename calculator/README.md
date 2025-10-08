@@ -5,6 +5,7 @@ A small calculator used by the Ai Agent and runnable on its own. It parses and e
 ### Quick Start
 - Example command:
   
+```python calculator/main.py "2 * 3 - 8 / 2 + 5"``` (Recommended)
 ```uv run calculator/main.py "2 * 3 - 8 / 2 + 5"```
 
 - Output
@@ -33,6 +34,13 @@ calculator/
 ```
 
 ## Running tests
+### Using Python directly (Recommended)
+```
+python -m unittest calculator/tests.py -v
+python -m unittest calculator.tests
+
+```
+### Using uv
 ```
 uv run python -m unittest calculator/tests.py -v
 uv run python -m unittest calculator.tests
